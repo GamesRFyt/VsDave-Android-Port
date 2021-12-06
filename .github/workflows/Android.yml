@@ -96,6 +96,8 @@ jobs:
 
           haxelib install hscript --quiet
 
+          haxelib install newgrounds --quiet
+
           haxelib install flixel-addons 2.10.0
 
           haxelib git faxe https://github.com/uhrobots/faxe --quiet
