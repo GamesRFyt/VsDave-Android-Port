@@ -118,7 +118,7 @@ class OptionsMenu extends MusicBeatState
 						
 					case 1:
 						FlxG.save.data.newInput = !FlxG.save.data.newInput;
-						var ctrl:Alphabet = new Alphabet(0, (70 * curSelected) + 30, (FlxG.save.data.newInput ? "Ghost Tapping" : "No Ghost Tapping"), true, false);
+						var ctrl:Alphabet = new Alphabet(0, (70 * curSelected) + 30, (FlxG.save.data.newInput ? "Ghost Tapping" : "Sem Ghost Tapping"), true, false);
 						ctrl.isMenuItem = true;
 						ctrl.targetY = curSelected - 1;
 						ctrl.screenCenter(X);
@@ -126,7 +126,7 @@ class OptionsMenu extends MusicBeatState
 						grpControls.add(ctrl);
 					case 2:
 						FlxG.save.data.downscroll = !FlxG.save.data.downscroll;
-						var ctrl:Alphabet = new Alphabet(0, (70 * curSelected) + 30, (FlxG.save.data.downscroll ? 'Downscroll' : 'Upscroll'), true, false);
+						var ctrl:Alphabet = new Alphabet(0, (70 * curSelected) + 30, (FlxG.save.data.downscroll ? 'Setas Pra Baixo' : 'Setas Pra Cima'), true, false);
 						ctrl.isMenuItem = true;
 						ctrl.targetY = curSelected - 2;
 						ctrl.screenCenter(X);
@@ -134,7 +134,7 @@ class OptionsMenu extends MusicBeatState
 						grpControls.add(ctrl);
 					case 3:
 						FlxG.save.data.accuracyDisplay = !FlxG.save.data.accuracyDisplay;
-						var ctrl:Alphabet = new Alphabet(0, (70 * curSelected) + 30, "Accuracy " + (FlxG.save.data.accuracyDisplay ? "off" : "on"), true, false);
+						var ctrl:Alphabet = new Alphabet(0, (70 * curSelected) + 30, "Precisao " + (FlxG.save.data.accuracyDisplay ? "off" : "on"), true, false);
 						ctrl.isMenuItem = true;
 						ctrl.targetY = curSelected - 3;
 						ctrl.screenCenter(X);
@@ -142,7 +142,7 @@ class OptionsMenu extends MusicBeatState
 						grpControls.add(ctrl);
 					case 4:
 						FlxG.save.data.eyesores = !FlxG.save.data.eyesores;
-						var ctrl:Alphabet = new Alphabet(0, (70 * curSelected) + 30, (FlxG.save.data.eyesores ? 'Eyesores Enabled' : 'Eyesores Disabled'), true, false);
+						var ctrl:Alphabet = new Alphabet(0, (70 * curSelected) + 30, (FlxG.save.data.eyesores ? 'Eyesores Ligado' : 'Eyesores Desligado'), true, false);
 						ctrl.isMenuItem = true;
 						ctrl.targetY = curSelected - 4;
 						ctrl.screenCenter(X);
@@ -150,7 +150,7 @@ class OptionsMenu extends MusicBeatState
 						grpControls.add(ctrl);
 					case 5:
 						FlxG.save.data.donoteclick = !FlxG.save.data.donoteclick;
-						var ctrl:Alphabet = new Alphabet(0, (70 * curSelected) + 30, (FlxG.save.data.donoteclick ? "Hitsounds On" : "Hitsounds Off"), true, false);
+						var ctrl:Alphabet = new Alphabet(0, (70 * curSelected) + 30, (FlxG.save.data.donoteclick ? "Som De Osu" : "Sem Som De Osu"), true, false);
 						ctrl.isMenuItem = true;
 						ctrl.targetY = curSelected - 5;
 						ctrl.screenCenter(X);
@@ -158,7 +158,7 @@ class OptionsMenu extends MusicBeatState
 						grpControls.add(ctrl);
 					case 6:
 						FlxG.save.data.freeplayCuts = !FlxG.save.data.freeplayCuts;
-						var ctrl:Alphabet = new Alphabet(0, (70 * curSelected) + 30, (FlxG.save.data.freeplayCuts ? "Freeplay Cutscenes On" : "Freeplay Cutscenes Off"), true, false);
+						var ctrl:Alphabet = new Alphabet(0, (70 * curSelected) + 30, (FlxG.save.data.freeplayCuts ? "cutscenes no freeplay" : "sem Cutscenes no freeplay"), true, false);
 						ctrl.isMenuItem = true;
 						ctrl.targetY = curSelected - 6;
 						ctrl.screenCenter(X);
@@ -166,7 +166,7 @@ class OptionsMenu extends MusicBeatState
 						grpControls.add(ctrl);
 					case 7:
 					    FlxG.switchState(new options.CustomControlsState());
-					    var ctrl:Alphabet = new Alphabet(0, (70 * curSelected) + 30, "Custom Controls", true, false);
+					    var ctrl:Alphabet = new Alphabet(0, (70 * curSelected) + 30, "controles mobile", true, false);
 						ctrl.isMenuItem = true;
 						ctrl.targetY = curSelected - 7;
 						ctrl.screenCenter(X);
@@ -174,7 +174,7 @@ class OptionsMenu extends MusicBeatState
 						grpControls.add(ctrl);
 					case 8:
 					    FlxG.save.data.chrome = !FlxG.save.data.chrome;
-						var ctrl:Alphabet = new Alphabet(0, (70 * curSelected) + 30, (FlxG.save.data.chrome ? "ChromaticAberration On" : "ChromaticAberration Off"), true, false);
+						var ctrl:Alphabet = new Alphabet(0, (70 * curSelected) + 30, (FlxG.save.data.chrome ? "ChromaticAberration ligado" : "ChromaticAberration desligado"), true, false);
 						ctrl.isMenuItem = true;
 						ctrl.targetY = curSelected - 8;
 						ctrl.screenCenter(X);
@@ -182,7 +182,7 @@ class OptionsMenu extends MusicBeatState
 						grpControls.add(ctrl);
 					case 9:
 					    FlxG.save.data.scanline = !FlxG.save.data.scanline;
-						var ctrl:Alphabet = new Alphabet(0, (70 * curSelected) + 30, (FlxG.save.data.scanline ? "Scanline On" : "Scanline Off"), true, false);
+						var ctrl:Alphabet = new Alphabet(0, (70 * curSelected) + 30, (FlxG.save.data.scanline ? "efeito tv ligado" : "efeito tv desligado"), true, false);
 						ctrl.isMenuItem = true;
 						ctrl.targetY = curSelected - 9;
 						ctrl.screenCenter(X);
@@ -190,7 +190,7 @@ class OptionsMenu extends MusicBeatState
 						grpControls.add(ctrl);
 					case 10:
 					    FlxG.save.data.tiltshift = !FlxG.save.data.tiltshift;
-						var ctrl:Alphabet = new Alphabet(0, (70 * curSelected) + 30, (FlxG.save.data.tiltshift ? "tiltShift On" : "tiltShift Off"), true, false);
+						var ctrl:Alphabet = new Alphabet(0, (70 * curSelected) + 30, (FlxG.save.data.tiltshift ? "tiltShift ligado" : "tiltShift desligado"), true, false);
 						ctrl.isMenuItem = true;
 						ctrl.targetY = curSelected - 10;
 						ctrl.screenCenter(X);
@@ -198,7 +198,7 @@ class OptionsMenu extends MusicBeatState
 						grpControls.add(ctrl);
 					case 11:
 					    FlxG.save.data.hq2x = !FlxG.save.data.hq2x;
-						var ctrl:Alphabet = new Alphabet(0, (70 * curSelected) + 30, (FlxG.save.data.hq2x ? "hq2x On" : "hq2x Off"), true, false);
+						var ctrl:Alphabet = new Alphabet(0, (70 * curSelected) + 30, (FlxG.save.data.hq2x ? "hq2x ligado" : "hq2x desligado"), true, false);
 						ctrl.isMenuItem = true;
 						ctrl.targetY = curSelected - 11;
 						ctrl.screenCenter(X);
