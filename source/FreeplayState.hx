@@ -339,13 +339,13 @@ class FreeplayState extends MusicBeatState
 				switch (curDifficulty)
 				{
 					case 0:
-						diffText.text = "EASY" + " - " + stupidBitch.toUpperCase();
+						diffText.text = "Fácil" + " - " + stupidBitch.toUpperCase();
 					case 1:
-						diffText.text = 'NORMAL' + " - " + stupidBitch.toUpperCase();
+						diffText.text = 'Normal' + " - " + stupidBitch.toUpperCase();
 					case 2:
-						diffText.text = "HARD" + " - " + stupidBitch.toUpperCase();
+						diffText.text = "Difícil" + " - " + stupidBitch.toUpperCase();
 					case 3:
-						diffText.text = "LEGACY" + " - " + stupidBitch.toUpperCase();
+						diffText.text = "Legado" + " - " + stupidBitch.toUpperCase();
 				}
 		}
 	}
